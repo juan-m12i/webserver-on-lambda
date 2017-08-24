@@ -39,13 +39,13 @@ def run(server_class=HTTPServer, handler_class=S, port=8080):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print ('Starting httpd...')
-    print(dir(httpd))
-    httpd.RequestHandlerClass.do_GET();
+    #print(dir(httpd))
+    #httpd.RequestHandlerClass.do_GET();
     httpd.serve_forever()
 
 def handler(request, context):
-    print(dir(request))
-    print(dir(context))
+    #print(dir(request))
+    #print(dir(context))
     run()
     
 # while keep_running():
